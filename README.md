@@ -1,27 +1,24 @@
-# Angular4Crud
+# Employees application using Angular 4 and Firebase
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.3.
 
-## Development server
+## Screenshot : 
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+***Login 
+![authentification](https://user-images.githubusercontent.com/17427223/31055051-ddcb6fde-a6be-11e7-949e-9e3100072dbd.png)
 
-## Code scaffolding
+***list Employee
+![dashboard](https://user-images.githubusercontent.com/17427223/31055052-ddceddcc-a6be-11e7-90d1-7d255c68e3da.png)
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+***Edit Employee 
+![employeeedit](https://user-images.githubusercontent.com/17427223/31055053-ddd1ea12-a6be-11e7-9ef4-5f56160e3a40.png)
+
+***Employee Information 
+![employeeinfo](https://user-images.githubusercontent.com/17427223/31055054-ddd736fc-a6be-11e7-8880-a874954f0f83.png)
+
+***Site Settings 
+![settings](https://user-images.githubusercontent.com/17427223/31055055-dddad4ba-a6be-11e7-8b45-b7030f9663f7.png)
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
