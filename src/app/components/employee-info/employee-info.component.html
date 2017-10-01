@@ -1,0 +1,73 @@
+<div class="row">
+  <div class="col-sm-4">
+  <a href="#"  routerLink ="/"  class="btn btn-success"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i> back to dashboard 
+  </a>
+</div>
+
+
+  <div class="col-sm-4">
+      <a href="" [routerLink]="['/edit-employee/'+id]"  class="btn btn-primary">Edit <i class="fa fa-info-circle" ></i>
+      </a>
+
+  </div>
+  <div class="col-sm-4">
+      <button  class="btn btn-danger"  (click)="myDelete()" >Delete <i class="fa fa-info-circle" ></i>
+      </button>
+  </div>
+</div>
+<hr>
+<div class="container">
+  <h3 [class.text-danger] ="hasSalary" [class.text-primary] ="!hasSalary"  > Salary :  {{employee.salary | currency:"USD":true}}
+  
+     <a (click)="showSalaryUpdate=!showSalaryUpdate"> <i class="fa fa-pencil-square-o" aria-hidden="true"></i></a>
+  </h3>
+  
+  <hr>
+  
+  <form *ngIf="showSalaryUpdate" (submit)="updateSalaryEmployee(id)">
+      <div class="form-group">
+  
+        <input type="text" class="form-control" name="salary" [(ngModel)]="employee.salary">
+      </div>
+  
+  
+      <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+  
+  
+  
+  </div>
+  <hr>
+
+
+      <table class="table table-inverse">
+          <thead>
+            <tr>
+             <th>First Name</th>
+              <th>Last Name</th>
+              <th>email</th>
+              <th>country</th>
+              <th>city</th>
+              <th>phone</th>
+              <th>salary</th>
+              <th>ID</th>
+
+            </tr>
+          </thead>
+          <tbody>
+            <tr  >
+              <th>{{employee.firstName}}</th>
+              <th>{{employee.lastName}}</th>
+              <th>{{employee.email}}</th>
+              <th>{{employee.country}}</th>
+              <th>{{employee.city}}</th>
+              <th>{{employee.phone}}</th>
+              <th>{{employee.salary | currency:"USD":true}}</th>
+              <th>{{employee.$key}}</th>
+
+
+            </tr>
+
+
+          </tbody>
+        </table>

@@ -1,0 +1,34 @@
+<style>
+
+      .container{
+        padding-top: 100px;
+      }
+    </style>
+
+    <div class="container">
+    <div class="row">
+    <div class="col-md-12  offset-md-12">
+        <div class="card-body">
+
+    <h2>Register page</h2>
+
+
+
+            <form (submit)="mySubmit()">
+                <div class="form-group">
+                  <label for="email">Email address:</label>
+       <input type="email" class="form-control" name="email" required [(ngModel)]="email">
+                </div>
+                <div class="form-group">
+                  <label for="pwd">Password:</label>
+      <input type="password" class="form-control" name="password" [(ngModel)]="password" required>
+                </div>
+
+                <button type="submit" class="btn btn-info btn-block" value="Login">Login</button>
+              </form>
+
+
+
+            </div></div>
+    </div></div>
+
