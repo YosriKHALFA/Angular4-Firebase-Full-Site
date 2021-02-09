@@ -1,4 +1,4 @@
-# Employees application using Angular 4 and Firebases
+# Employees application using Angular 4 and Firebase
 
 ## Screenshot : 
 
