@@ -1,4 +1,2 @@
-<<<<<<< HEAD
 deuxiéme test
-=======
->>>>>>> parent of bd5883f... premier test
+
